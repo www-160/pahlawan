@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<h1><title>by coding noob</title><h1></br></br>
+<div style="text-shadow: 0px 0px 10px lime;">
+<div style="text-shadow: 0px 0px 10px lime;">
+<script>
+alert("coding by XI TO B")
+alert("selamat hari pahlawan 10-november-2021")
+</script>
+</script>
+</head>
+<center> <img src="https://akcdn.detik.net.id/community/media/visual/2021/11/05/twibbon-10-november-2021-hari-pahlawan-bertema-pahlawanku-inspirasiku.jpeg" width="280" height="300"/><a/>
+<meta content='Penerbit by rahman !' name='description'/>
+<meta content='Penerbit by rahman !' name='keywords'/>
+<meta content='Penerbit by rahman !' name='Abstract'/>
+<meta name="title" content="Memperingati hari pahlwan">
+<meta name="description" content="lanjut ~">
+<meta name="keywords" content="Pembuat by rahman ! ">
+<meta name="googlebot" content="index,follow" />
+<meta name="robots" content="all" />
+<meta name="robots schedule" content="auto" />
+<meta name="distribution" content="global" /> 
+<base target='_blank'/> 
+<link href='https://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two" rel="stylesheet" type='text/css'>
+<font face="'Covered By rahman', Arial, sans-serif;" size="5px" color="#8B0000"><br>
+<span style="color: white;"><div align="center"><font face="Dancing Script" size="5px" color="white" style="text-shadow: lime 0 0 10px;">~ir.soekarno~</font><br>
+<span style="color: white;"><div align="center"><font face="Dancing Script" size="3px" color="white" style="text-shadow: #ddd 0 0 20px;">"~Bangsa yang benar adalah bangsa yang menghargai jasa pahlawannya~" </font></br>
+<span style="color: white;"><div align="center">
+<font face="Shadows Into Light Two" size="2px" color="white" style="text-shadow: lime 0 0 10px;"><br> Hai, para generasi baru dari bangsa yang permai ini... <br> Siapkah kalian untuk maju dan bersaing <br> kalahkan rasa takut yang selalu menghantuimu</br></font>
+<br>
+<font color='white' face='verdana' size='3'>-=|</font>
+<font face="Shadows Into Light Two" size="2px" color="white" style="text-shadow: grey 0 0 10px;">
+<marquee scrollamount='Abstract' behavior='alternate' width='50%'>
+NKRI HARGA MATI BY RAHMAN
+</marquee></font>
+<font color='white' face='verdana' size='5'>|=-</font>
+
+<body bgcolor=black>
+<body oncontextmenu='return false;' onkeydown='return false;' onmousedown='return false;'>
+<script type='text/javascript'>
+
+
+var snowmax=35
+var snowcolor=new Array("#AAAACC","#DDDDFF","#CCCCDD","#F3F3F3","#F0FFFF")
+var snowtype=new Array("Arial Lime","Arial Narrow","Times","Comic Sans MS")
+var snowletter="*"
+var sinkspeed=0.6
+var snowmaxsize=22
+var snowminsize=8
+var snowingzone=1
+
+// Do not edit below this line
+var snow=new Array()
+var marginbottom
+var marginright
+var timer
+var i_snow=0
+var x_mv=new Array();
+var crds=new Array();
+var lftrght=new Array();
+var browserinfos=navigator.userAgent 
+var ie5=document.all&&document.getElementById&&!browserinfos.match(/Opera/)
+var ns6=document.getElementById&&!document.all
+var opera=browserinfos.match(/Opera/)  
+var browserok=ie5||ns6||opera
+
+function randommaker(range) {  
+ rand=Math.floor(range*Math.random())
+    return rand
+}
+
+function initsnow() {
+ if (ie5 || opera) {
+  marginbottom = document.body.clientHeight
+  marginright = document.body.clientWidth
+ }
+ else if (ns6) {
+  marginbottom = window.innerHeight
+  marginright = window.innerWidth
+ }
+ var snowsizerange=snowmaxsize-snowminsize
+ for (i=0;i<=snowmax;i++) {
+  crds[i] = 0;                      
+     lftrght[i] = Math.random()*15;         
+     x_mv[i] = 0.03 + Math.random()/10;
+  snow[i]=document.getElementById("s"+i)
+  snow[i].style.fontFamily=snowtype[randommaker(snowtype.length)]
+  snow[i].size=randommaker(snowsizerange)+snowminsize
+  snow[i].style.fontSize=snow[i].size
+  snow[i].style.color=snowcolor[randommaker(snowcolor.length)]
+  snow[i].sink=sinkspeed*snow[i].size/5
+  if (snowingzone==1) {snow[i].posx=randommaker(marginright-snow[i].size)}
+  if (snowingzone==2) {snow[i].posx=randommaker(marginright/2-snow[i].size)}
+  if (snowingzone==3) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/4}
+  if (snowingzone==4) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/2}
+  snow[i].posy=randommaker(2*marginbottom-marginbottom-2*snow[i].size)
+  snow[i].style.left=snow[i].posx
+  snow[i].style.top=snow[i].posy
+ }
+ movesnow()
+}
+
+function movesnow() {
+ for (i=0;i<=snowmax;i++) {
+  crds[i] += x_mv[i];
+  snow[i].posy+=snow[i].sink
+  snow[i].style.left=snow[i].posx+lftrght[i]*Math.sin(crds[i]);
+  snow[i].style.top=snow[i].posy
+  
+  if (snow[i].posy>=marginbottom-2*snow[i].size || parseInt(snow[i].style.left)>(marginright-3*lftrght[i])){
+   if (snowingzone==1) {snow[i].posx=randommaker(marginright-snow[i].size)}
+   if (snowingzone==2) {snow[i].posx=randommaker(marginright/2-snow[i].size)}
+   if (snowingzone==3) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/4}
+   if (snowingzone==4) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/2}
+   snow[i].posy=0
+  }
+ }
+ var timer=setTimeout("movesnow()",50)
+}
+
+for (i=0;i<=snowmax;i++) {
+ document.write("<span id='s"+i+"' style='position:absolute;top:-"+snowmaxsize+"'>"+snowletter+"</span>")
+}
+if (browserok) {
+ window.onload=initsnow
+}
+</script>
+ <div data-video="G-L9hxNWWyo"  
+         data-autoplay="1"         
+         data-loop="0"             
+         id="youtube-audio">
+     <p> jangn lupa play musiknya :)<p> dibwah taxt ini:)</p>
+  </div>
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="https://cdn.rawgit.com/mastamvan/backup/master/embedded-audio-youtube.js"></script>
+  <div class="scroll-container">
+<div class="scrollamount">
+<!-- PLACE YOUR IMG URL HERE -->
+      <img src="https://media.tenor.com/images/16d0ecbb2c024ab4fb1b06e55c8ea1ff/tenor.gif" width="200px" height="200px"/>
+      <img src="https://media.tenor.com/images/28f06aa8530a81ca78e31a838d2966af/tenor.gif" width="200px" height="200px"/>
+      <img src="https://media.tenor.com/images/32adf0a6d8c90a0cae07465470378892/tenor.gif" width="200px" height="200px"/>
+      <img src="https://media.tenor.com/images/fb606d6dfbc9f9ac47afa703348d52ea/tenor.gif" width="200px" height="200px"/>
+  </div>
+</div> 
+<img src="https://4.bp.blogspot.com/-zddHXprjSjs/WH2d11Lw-cI/AAAAAAAAFA4/mEQ5Wgmg4NYBNQKAlfj-sJEnNBQO-aOJgCLcB/s1600/animasi-NKRI-harga-MATI.gif" width="980px" height="350px">
+</BODY></HTML> 
